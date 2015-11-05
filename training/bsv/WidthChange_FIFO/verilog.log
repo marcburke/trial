@@ -1,0 +1,7 @@
+Copyright (c) 1991-2014 Tachyon Design Automation Corp.
+  All Rights reserved.  Licensed software subject to prohibitions and
+  restrictions.  See OSS CVC artistic license included with release.
+BRAM01 Read = 11223344 11223344
+BRAM01 Read = 22334455 bbbbbbbb
+BRAM23 Read = 11223344 11223344
+TESTS FINISHED
