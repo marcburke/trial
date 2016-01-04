@@ -1,0 +1,461 @@
+$date
+    Thu Dec 31 15:31:39 2015
+$end
+$version
+    OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14
+$end
+$timescale
+    1 ns
+$end
+$scope module main $end
+$var reg       1 !    CLK $end
+$var reg       1 "    RST $end
+$var reg      32 #    cycle [31:0] $end
+$var reg       1 $    do_cycles $end
+$var reg       1 %    do_fsdb $end
+$var reg       1 &    do_fst $end
+$var reg       1 '    do_vcd $end
+$var reg    2048 (    filename [2048:1] $end
+$scope module top $end
+$var wire       1 )    CAN_FIRE_RL_done $end
+$var wire       1 *    CAN_FIRE_RL_step0 $end
+$var wire       1 +    CAN_FIRE_RL_step1 $end
+$var wire       1 ,    CAN_FIRE_RL_step2 $end
+$var wire       1 -    CAN_FIRE_RL_step3 $end
+$var wire       1 .    CLK $end
+$var wire       1 /    MUX_state$write_1__SEL_1 $end
+$var wire       1 0    RST_N $end
+$var wire       1 1    WILL_FIRE_RL_done $end
+$var wire       1 2    WILL_FIRE_RL_step0 $end
+$var wire       1 3    WILL_FIRE_RL_step1 $end
+$var wire       1 4    WILL_FIRE_RL_step2 $end
+$var wire       1 5    WILL_FIRE_RL_step3 $end
+$var wire       1 6    counter1$EN_increment $end
+$var wire       1 7    counter1$EN_load $end
+$var wire       8 8    counter1$load_newval [7:0] $end
+$var wire       8 9    counter1$read [7:0] $end
+$var wire       1 :    counter2$EN_increment $end
+$var wire       1 ;    counter2$EN_load $end
+$var wire       8 <    counter2$load_newval [7:0] $end
+$var reg       1 =    reset_d1 $end
+$var wire       1 >    reset_d1$D_IN $end
+$var wire       1 ?    reset_d1$EN $end
+$var reg       1 @    reset_pk $end
+$var wire       1 A    reset_pk$D_IN $end
+$var wire       1 B    reset_pk$EN $end
+$var wire       1 C    rst1$OUT_RST $end
+$var wire       1 D    rst2$OUT_RST $end
+$var reg      16 E    state [15:0] $end
+$var reg      16 F    state$D_IN [15:0] $end
+$var wire       1 G    state$EN $end
+$scope module counter1 $end
+$var wire       1 H    CAN_FIRE_increment $end
+$var wire       1 J    CAN_FIRE_load $end
+$var wire       1 L    CLK $end
+$var wire       1 N    EN_increment $end
+$var wire       1 P    EN_load $end
+$var wire       8 R    MUX_value$write_1__VAL_2 [7:0] $end
+$var wire       1 T    RDY_increment $end
+$var wire       1 V    RDY_load $end
+$var wire       1 X    RDY_read $end
+$var wire       1 Z    RST_N $end
+$var wire       1 \    WILL_FIRE_increment $end
+$var wire       1 ^    WILL_FIRE_load $end
+$var wire       8 `    load_newval [7:0] $end
+$var wire       8 b    read [7:0] $end
+$var reg       8 d    value [7:0] $end
+$var wire       8 f    value$D_IN [7:0] $end
+$var wire       1 h    value$EN $end
+$upscope $end
+$scope module counter2 $end
+$var wire       1 I    CAN_FIRE_increment $end
+$var wire       1 K    CAN_FIRE_load $end
+$var wire       1 M    CLK $end
+$var wire       1 O    EN_increment $end
+$var wire       1 Q    EN_load $end
+$var wire       8 S    MUX_value$write_1__VAL_2 [7:0] $end
+$var wire       1 U    RDY_increment $end
+$var wire       1 W    RDY_load $end
+$var wire       1 Y    RDY_read $end
+$var wire       1 [    RST_N $end
+$var wire       1 ]    WILL_FIRE_increment $end
+$var wire       1 _    WILL_FIRE_load $end
+$var wire       8 a    load_newval [7:0] $end
+$var wire       8 c    read [7:0] $end
+$var reg       8 e    value [7:0] $end
+$var wire       8 g    value$D_IN [7:0] $end
+$var wire       1 i    value$EN $end
+$upscope $end
+$scope module rst1 $end
+$var wire       1 j    CLK $end
+$var wire       1 k    IN_RST $end
+$var wire       1 l    OUT_RST $end
+$var wire       2 m    next_reset [1:0] $end
+$var reg       1 n    reset_hold [0:0] $end
+$upscope $end
+$scope module rst2 $end
+$var wire       1 o    CLK $end
+$var wire       1 p    IN_RST $end
+$var wire       1 q    OUT_RST $end
+$var wire       3 r    next_reset [2:0] $end
+$var reg       2 s    reset_hold [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+0"
+b0 #
+0$
+0%
+0&
+1'
+b110010001110101011011010111000000101110011101100110001101100100 (
+0)
+0*
+0+
+0,
+0-
+x.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+b0 8
+b10101010 9
+0:
+0;
+b0 <
+0=
+0>
+0?
+0@
+0A
+0B
+1C
+1D
+b1010101010101010 E
+b1010101010101010 F
+0G
+1H
+1I
+1J
+1K
+xL
+xM
+0N
+0O
+0P
+0Q
+b10101011 R
+b10101011 S
+1T
+1U
+1V
+1W
+1X
+1Y
+1Z
+1[
+0\
+0]
+0^
+0_
+b0 `
+b0 a
+b10101010 b
+b10101010 c
+b10101010 d
+b10101010 e
+b10101011 f
+b10101011 g
+0h
+0i
+xo
+0p
+1q
+b111 r
+b11 s
+xj
+0k
+1l
+b11 m
+b1 n
+$end
+#1
+b1 F
+1G
+0[
+0Z
+12
+0D
+0C
+1*
+0q
+b1 r
+0l
+b1 m
+b0 E
+1@
+1=
+b0 s
+b0 n
+1L
+1M
+1j
+1o
+1.
+1!
+b1 #
+#2
+1k
+1p
+10
+1"
+#5
+0L
+0M
+0j
+0o
+0.
+0!
+#10
+b1010101010101010 F
+1\
+1h
+1]
+1i
+1N
+1O
+1Z
+0G
+02
+13
+1?
+16
+1:
+1C
+b1 g
+b0 9
+b1 f
+0*
+1+
+b11 r
+1l
+b11 m
+b0 c
+b1 S
+b0 b
+b1 R
+b1 E
+b1 s
+b1 n
+b0 e
+b0 d
+1L
+1M
+1j
+1o
+1.
+1!
+#11
+b10 #
+#15
+0L
+0M
+0j
+0o
+0.
+0!
+#20
+1[
+1D
+b1 9
+b10 f
+1q
+b111 r
+b1 b
+b10 R
+0=
+b11 s
+b1 d
+1L
+1M
+1j
+1o
+1.
+1!
+#21
+b11 #
+#25
+0L
+0M
+0j
+0o
+0.
+0!
+#30
+b10 g
+b10 9
+b11 f
+b1 c
+b10 S
+b10 b
+b11 R
+b1 e
+b10 d
+1L
+1M
+1j
+1o
+1.
+1!
+#31
+b100 #
+#35
+0L
+0M
+0j
+0o
+0.
+0!
+#40
+b11 g
+b11 9
+b100 f
+b10 c
+b11 S
+b11 b
+b100 R
+b10 e
+b11 d
+1L
+1M
+1j
+1o
+1.
+1!
+#41
+b101 #
+#45
+0L
+0M
+0j
+0o
+0.
+0!
+#50
+b10 F
+1/
+1G
+b100 g
+b100 9
+b101 f
+b11 c
+b100 S
+b100 b
+b101 R
+b11 e
+b100 d
+1L
+1M
+1j
+1o
+1.
+1!
+#51
+b110 #
+#55
+0L
+0M
+0j
+0o
+0.
+0!
+#60
+b11 F
+0\
+0h
+0]
+0i
+0N
+0O
+0/
+03
+0?
+06
+0:
+14
+b101 g
+b101 9
+b110 f
+0+
+1,
+b100 c
+b101 S
+b101 b
+b110 R
+b10 E
+b100 e
+b101 d
+1L
+1M
+1j
+1o
+1.
+1!
+#61
+b111 #
+#65
+0L
+0M
+0j
+0o
+0.
+0!
+#70
+b100 F
+04
+15
+0,
+1-
+b11 E
+1L
+1M
+1j
+1o
+1.
+1!
+#71
+b1000 #
+#75
+0L
+0M
+0j
+0o
+0.
+0!
+#80
+b1010101010101010 F
+0G
+05
+11
+0-
+1)
+b100 E
+1L
+1M
+1j
+1o
+1.
+1!
+#81
+b1001 #
+#85
